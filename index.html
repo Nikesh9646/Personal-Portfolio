@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Nikesh Penala| Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .navbar-scroll {
+      background: linear-gradient(to right, #3b82f6, #6366f1);
+      transition: background 0.5s;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="flex justify-between p-5 bg-white shadow-md fixed w-full z-10">
+    <div class="text-xl font-bold"> Nikesh Penala</div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#education" class="hover:text-blue-500">Education</a>
+      <a href="#projects" class="hover:text-blue-500">Projects</a>
+      <a href="#skills" class="hover:text-blue-500">Skills</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white pt-20 fade-in" id="home">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm  Nikesh Penala</h1>
+      <p class="text-lg md:text-2xl mb-6">Software Engineer | Developer</p>
+      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-transform transform hover:scale-105">Let's Connect</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto p-6 my-12 fade-in">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p>"A highly motivated and enthusiastic student seeking an opportunity to leverage my technical skills and knowledge in software development. I aim to effectively collaborate within a team-oriented environment, contributing to the organization's success while continuously acquiring and adapting to new challenges."</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="bg-gray-100 py-12 fade-in">
+    <div class="max-w-5xl mx-auto p-6">
+      <h2 class="text-3xl font-bold mb-6">Education</h2>
+      <ul class="space-y-6">
+        <li>
+          <h3 class="text-xl font-semibold">Malla Reddy Institute Of Technology, Hyderabad</h3>
+          <p>B-TECH, Computer Science and Engineering (2022 - 2025) | CGPA: 8.5</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold">Sri Sangameshwara Government Polytechnic College, Zahirabad</h3>
+          <p>Diploma in Mechanical Engineering (2019 - 2022) | CGPA: 8.36</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-semibold">New Vision High School, Warangal</h3>
+          <p>SSC | CGPA: 8.8</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-5xl mx-auto p-6 my-12 fade-in">
+    <h2 class="text-3xl font-bold mb-6">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 bg-white shadow rounded hover:scale-105 transform transition-transform">
+        <h3 class="text-xl font-semibold">Live Driver Drowsiness Detection Using SVM</h3>
+        <ul class="list-disc ml-5 mt-2 text-gray-700">
+          <li>Real-time detection of driver drowsiness.</li>
+          <li>Webcam captures facial features like eye closure and yawning.</li>
+          <li>Support Vector Machine model classifies driver state.</li>
+          <li>Alerts triggered to warn drivers.</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white shadow rounded hover:scale-105 transform transition-transform">
+        <h3 class="text-xl font-semibold">Heart Disease Identification Using ML in E-Healthcare</h3>
+        <ul class="list-disc ml-5 mt-2 text-gray-700">
+          <li>Machine learning-based heart disease prediction system.</li>
+          <li>Used optimized features for high accuracy.</li>
+          <li>Future expansion to real-time monitoring with wearables.</li>
+          <li>Enhanced personalized healthcare.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 py-12 fade-in">
+    <div class="max-w-5xl mx-auto p-6">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="p-4 bg-white shadow rounded">C</div>
+        <div class="p-4 bg-white shadow rounded">Python</div>
+        <div class="p-4 bg-white shadow rounded">Java</div>
+        <div class="p-4 bg-white shadow rounded">HTML</div>
+        <div class="p-4 bg-white shadow rounded">CSS</div>
+        <div class="p-4 bg-white shadow rounded">JavaScript</div>
+        <div class="p-4 bg-white shadow rounded">MySQL</div>
+        <div class="p-4 bg-white shadow rounded">DBMS</div>
+        <div class="p-4 bg-white shadow rounded">GIT</div>
+        <div class="p-4 bg-white shadow rounded">FIGMA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-5xl mx-auto p-6 my-12 fade-in">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p>Email: <a href="mailto:nikeshpenala15@gmail.com" class="text-blue-600">nikeshpenala15@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nikesh-penala" class="text-blue-600">linkedin.com/in/nikesh-penala</a></p>
+    <p>Git: <a href="https://github.com/Nikesh9646" class="text-blue-600">Nikesh9646</a></p>
+    <p>Location: Hyderabad, Telangana, India</p>
+  </section>
+
+  <footer class="text-center p-6 text-gray-500">
+    &copy; 2025 Penala Nikesh. All rights reserved.
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+    // Navbar color change on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('navbar-scroll');
+      } else {
+        navbar.classList.remove('navbar-scroll');
+      }
+    });
+  </script>
+
+</body>
+</html>
